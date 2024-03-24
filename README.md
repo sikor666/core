@@ -1,9 +1,14 @@
-# info
-core dump
+# core
+```bash
+g++ -g segmentation_fault.cpp -o segmentation_faulta
+gdb -q segmentation_fault core
+ulimit -c unlimited
+```
 
-# gdb -q segmentation_fault core
+# gdb
 ```bash
 backtrace
+list 5,11
 print i
 print vec[i]
 print vec[i-1]

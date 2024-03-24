@@ -8,7 +8,9 @@ ulimit -c unlimited
 # gdb
 ```bash
 backtrace
+backtrace full
 list 5,11
+list 5,20
 print i
 print vec[i]
 print vec[i-1]
